@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+*{ margin: 0; padding: 0; outline: none; box-shadow: none; box-sizing: border-box; }
+
+body { font-family: 'Nunito', sans-serif; }
+
+.office { background-color: #57C5B6; }
+.personal { background-color: #AA77FF; }
+.home { background-color: #F9F54B; }
+.other { background-color: #5800FF; }
+.not-selected { background-color: #395B64; }
+.task-complete { text-decoration: line-through; }
+
+
+.insert-data { display: block; width: 360px; margin: 30px auto 30px; padding: 20px 30px 30px; background-color: white; border-radius: 10px; box-shadow: 7px 7px 15px #45566738, -8px -8px 15px rgb(81 101 121 / 4%), inset -5px -4px 13px 0px rgb(81 101 121 / 20%), inset 6px 7px 12px 0px rgb(255 255 255 / 5%); }
+.insert-data .form-heading { text-align: center; font-size: 26px; line-height: 1; margin: 0 0 20px; -webkit-text-stroke: 1px #CA356F; -ms-text-stroke: 1px #CA356F; color: transparent; }
+.insert-data .insert-task, .insert-data .insert-type, .insert-data .insert-date { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; margin: 0 0 20px; color: #CA356F; }
+.insert-data .insert-task #insertTask, .insert-data .insert-type #selectType, .insert-data .insert-date #insertData { display: block; width: calc(100% - 50px); padding: 5px 10px; }
+.insert-data .insert-task #insertTask { border-radius: 8px; border: 1px solid rgba(202, 53, 111, 0.4); height: 60px; }
+.insert-data .insert-type #selectType { border-radius: 6px; border: 1px solid rgba(202, 53, 111, 0.4); height: 35px; }
+.insert-data .insert-date #insertData { border-radius: 6px; border: 1px solid rgba(202, 53, 111, 0.4); height: 35px; }
+.insert-data #submitTask { display: block; margin: 0 auto; padding: 10px 20px; border: none; border-radius: 30px; color: white; background-color: #CA356F; }
+
+#showTodoData { display: flex; flex-wrap: wrap; padding: 0 15px; }
+#showTodoData .todo { width: calc(25% - 30px); margin: 0 15px 30px; padding: 20px; border-radius: 10px; display: flex; flex-wrap: wrap; align-items: center; position: relative; }
+#showTodoData .todo .todo-detail { padding: 0 0 0 15px; }
+#showTodoData .todo .action-buttons #deleteTodo { position: absolute; top: 10px; right: 10px; }
+#showTodoData .todo .action-buttons #updateTodo { position: absolute; bottom: 10px; right: 10px; }
+
+#showTodoData .todo .action-buttons svg#deleteTodo, #showTodoData .todo .action-buttons svg#updateTodo { display: block; width: 20px; }
